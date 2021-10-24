@@ -1,9 +1,9 @@
 <?php
 include "../db/db.php";
-include "../classes/source.php";
+include "../classes/NewSource.php";
 $database = new db();
 $db = $database->getConnection();
-$source = new source($db);
+$source = new NewSource($db);
 
 if(isset($_SERVER['REQUEST_METHOD'] ) == 'POST'){
 

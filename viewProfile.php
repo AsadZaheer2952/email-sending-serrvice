@@ -22,7 +22,7 @@ if(isset($_SERVER['REQUEST_METHOD'] ) == 'GET'){
                         'email' => $usersRow['email'],
                         'image' => $usersRow['image'],
                         'balance' => $usersRow['balance'],
-                        'type' => $row['type'],
+                        'type' => $usersRow['type'],
                         'createdAt'  => $usersRow['created_at'],
                     ];
                 }
